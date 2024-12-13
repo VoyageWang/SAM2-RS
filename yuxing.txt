@@ -1,0 +1,7 @@
+# 下面是我们新的直接在遥感数据集上的
+train_ds_rs.py的训练
+NCCL_P2P_DISABLE=1 deepspeed --master_port=24999 train_ds_rs.py --dataset_dir='/mnt/vos-xt8an8kg/llm/data/data2' --dataset="rsris_seg" --sample_rates="1" --exp_name="evf-sam2-RS"
+
+
+对rs进行测试
+torchrun --standalone --nproc_per_node 2 eval_rs.py --version /data1/wyj/voyage_pro/EVF-SAM/evf-sam --dataset_dir '/mnt/vos-xt8an8kg/llm/data/data2' --val_dataset "refcoco|unc|val" --model_type "sam2"

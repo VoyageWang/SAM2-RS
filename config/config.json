@@ -1,0 +1,21 @@
+{
+  "architectures": [
+    "EvfSam2Model"
+  ],
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "hidden_size": 1024,
+  "mm_extractor_scale": "large",
+  "model_type": "evf",
+  "out_dim": 256,
+  "pad_token_id": 1,
+  "sam_scale": "large",
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "peft_beit": false,
+  "peft_sam": false,
+  "san": false,
+  "transformers_version": "4.43.3"
+}
+
+  
